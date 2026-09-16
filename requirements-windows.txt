@@ -1,6 +1,7 @@
 # Windows (x64) + NVIDIA RTX 50 시리즈(Blackwell) + Python 3.11 용 버전 조합
 # RTX 50 시리즈는 CUDA 12.8 이상 빌드(torch 2.7+)만 지원하므로 torch 2.3.x 대신 2.7.1+cu128을 사용합니다.
 # torchtext는 torch 2.3.x까지만 동작(개발 종료)하므로 이 조합에서는 제외했습니다.
+# torchtext가 필요하면 별도 CPU 전용 환경을 쓰세요: requirements-torchtext.txt 참고 (.venv-torchtext / 커널 "Python 3.11 (torchtext, CPU)").
 #
 # 설치 (이 폴더의 .venv 에만 적용):
 #   uv venv --python 3.11 .venv
